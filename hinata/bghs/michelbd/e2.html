@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ミシェル Happy Birthday 故事章節 ミミの先生 劇情翻譯 | 戰鬥女子高校 - GAWiki</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <style type="text/css">
+    .ratop, .rabottom {width: 320px; height: 100px;}
+    @media (min-width:500px) { .ratop, .rabottom {width: 468px; height: 60px;} }
+    @media (min-width:800px) { .ratop, .rabottom {width: 728px; height: 90px;} }
+    #story {text-align: center;}
+    #storycontainer {position: relative;}
+    #storyimage {display: block; max-width: 100%; height: auto; vertical-align: center;}
+    #storycontent {position: absolute; bottom: 0; left: 0; width: 100%; background-color: #000; opacity: 0.6; color: #FFF; padding-top: 6px; padding-bottom: 6px; font-size: 14pt;}
+  </style>
+  <script>
+var storyteller=function(){that=this;this.scenes=[];this.block=this.count=this.scene=0};storyteller.prototype.parsehash=function(a){return"undefined"===typeof a||isNaN(a)||2>a?0:a>=this.count?this.count-1:a-1};
+storyteller.prototype.init=function(a,b){this.scenes=[{image:"img/e2/e2-12.png",text:"\u5582\uff5e\u30df\u30b7\u30a7\u30eb"},{image:"img/e2/e2-13.png",text:"\u554a\u3001\u8001\u5e2b\uff5e"},{image:"img/e2/e2-14.png",text:"\u4ec0\u9ebc\u4e8b\u5462\uff1f"},{image:"img/e2/e2-15.png",text:"\u9019\u500b\u3001\u60f3\u9001\u7d66\u30df\u30b7\u30a7\u30eb..."},{image:"img/e2/e2-16.png",text:"\u8b1d\u8b1d\uff01"},{image:"img/e2/e2-17.png",text:"\u4eca\u5929\u958b\u59cb\uff0c\u6703\u60f3\u8457\u9019\u500b\u5c31\u662f\u8001\u5e2b\u4f86\u62b1\u8457\u7761\u5462\uff01"},
+{image:"img/e2/e2-18.png",text:"\u561b\u3001\u561b\u3001\u4f60\u611f\u5230\u9ad8\u8208\u5c31\u597d\u4e86\u3002"},{image:"img/e2/e2-19.png",text:"\u90a3\u500b\u5462\u3001\u8001\u5e2b... \u30df\u30df\u5462..."},{image:"img/e2/e2-20.png",text:"\u4ec0\u9ebc\u4e8b\uff1f"},{image:"img/e2/e2-21.png",text:"\u30df\u30df\u3001\u6700\uff5e\u559c\u6b61\u8001\u5e2b\u4e86\uff01"},{image:"img/e2/e2-22.png",text:"\u4eca\u5f8c\u4e5f\u4e00\u76f4\u8981\u7576\u30df\u30df\u7684\u8001\u5e2b\u54e6"},{image:"img/e2/e2-25.png",
+text:"\u554a\u3001\u554a\u3002\u6211\u6703\u52aa\u529b\u7684..."},{image:"img/e2/e2-26.png",text:"\u8a92\u563f\u563f..."}];this.count=this.scenes.length;this.scene=this.parsehash(b);$("#storytotal").text(this.count);this.loadscene(this.scene)};storyteller.prototype.updatescene=function(a,b){this.block=1;$("#storyimage").attr("src",a).on("load",function(){$("#loadingmodal").closeModal();$("#storycontent").text(b);that.block=0})};
+storyteller.prototype.preload=function(a){var b=new Image,c=new Image;b.src=this.scenes[a+1].image;c.src=this.scenes[a+2].image};storyteller.prototype.loadscene=function(a){this.scene=a;$("#nowprogress").text(this.scene+1);if(a<this.count)a!==this.count&&(window.location.hash=a+1),this.updatescene(this.scenes[a].image,this.scenes[a].text);else return this.scene=this.count-1,!1;a<parseInt(this.count)-2&&this.preload(a)};
+storyteller.prototype.reloadscene=function(a){qi=this.parsehash(a);qi!==this.scene&&this.loadscene(qi)};storyteller.prototype.prevscene=function(){if(0==this.scene||1==this.block)return 1==this.block&&$("#loadingmodal").openModal(),!1;--this.scene;this.loadscene(this.scene)};storyteller.prototype.nextscene=function(){if(1==this.block)return $("#loadingmodal").openModal(),!1;this.scene+=1;this.loadscene(this.scene)};
+$(function(){var a=new storyteller;a.init("e1.json",parseInt(window.location.hash.substring(1)));$(window).on("hashchange",function(){a.reloadscene(parseInt(window.location.hash.substring(1)))});$("#storyimage").on("vclick swipeleft",function(){a.nextscene()});$("#storyimage").on("swiperight",function(){a.prevscene()});$("#navprevbtn").on("vclick",function(){a.prevscene()});$("#navnextbtn").on("vclick",function(){a.nextscene()})});
+  </script>
+</head>
+<body>
+  <div data-role="page">
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GAWiki 第99區</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h3>ミシェル Happy Birthday 故事章節 ミミの先生 劇情翻譯</h3>
+        <h5>遊戲：戰鬥女子高校 / 文章作者：日向</h5>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ratop" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="4650440851" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class="row" id="story">
+        <div class="col s12">
+          <div style="font-size: 0.8em">（翻頁可點擊圖像、在圖上左右撥動或者使用圖像下方按鈕）</div>
+          <div id="storycontainer">
+            <img src="img/e1/e1-6.png" alt="劇情圖片" id="storyimage">
+            <div id="storycontent">啊、老師，找～到你了！</div>
+          </div>
+          <div id="storyprogress" style="text-align: center; color: #333">
+            <span id="nowprogress">1</span>/<span id="storytotal"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navprevbtn">前一張</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navnextbtn">後一張</a></div>
+        <div class="col s6 offset-s3 m6"><a href="e1.html" class="waves-effect waves-light btn-large" style="width: 100%">上一章</a></div>
+      </div>
+      <div class="row">
+        Facebook 粉絲專頁：<a href="https://www.facebook.com/highschoolbattlegirl" target="_blank">戰鬥女子高校 Battle Girl High School</a>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle rabottom" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="6127174054" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div id="loadingmodal" class="modal">
+        <div class="modal-content">
+          <p>載入中，請稍候。</p>
+          <p>如等候超過10秒，請刷新頁面。</p>
+        </div>
+      </div>
+      <div class="row">
+        <small>屬於玩家們的空間 - <a href="http://gawiki.com" target="_blank">GAWiki</a> 分支</small>
+      </div>
+    </div>
+</body>
+</html>
