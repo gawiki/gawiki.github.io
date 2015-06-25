@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>謎のイロウス 接触編 故事章節 くるみの宝物 劇情翻譯 | 戰鬥女子高校 - GAWiki</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <style type="text/css">
+    nav {background-color: #1976D2;}
+    .ratop, .rabottom {width: 320px; height: 100px;}
+    @media (min-width:500px) { .ratop, .rabottom {width: 468px; height: 60px;} }
+    @media (min-width:800px) { .ratop, .rabottom {width: 728px; height: 90px;} }
+    #story {text-align: center;}
+    #storycontainer {position: relative;}
+    #storyimage {display: block; max-width: 100%; height: auto; vertical-align: center;}
+    #storycontent {position: absolute; bottom: 0; left: 0; width: 100%; background-color: #000; opacity: 0.6; color: #FFF; padding-top: 6px; padding-bottom: 6px; font-size: 14pt;}
+  </style>
+  <script>
+var storyteller=function(){that=this;this.scenes=[];this.block=this.count=this.scene=0};storyteller.prototype.parsehash=function(a){return"undefined"===typeof a||isNaN(a)||2>a?0:a>=this.count?this.count-1:a-1};
+storyteller.prototype.init=function(a,b){this.scenes=[{image:"img/e3/e3-96.png",text:"\uff5e\u5730\u7403 \u5730\u4e0b\u8857\uff5e"},{image:"img/e3/e3-97.png",text:"\u55c5\u55c5\u55c5...\u5b83\u61c9\u8a72\u5728\u9019\u908a..."},{image:"img/e3/e3-98.png",text:"\u30d4\u30e5\u30a6\u30a6\u30a6\u30a6\u30a6\u30a6"},{image:"img/e3/e3-99.png",text:"\u7b49\u7b49\uff01\u8acb\u7b49\u7b49\uff01"},{image:"img/e3/e3-100.png",text:"..."},{image:"img/e3/e3-101.png",text:"\u90a3\u662f\u6211\u5f88\u91cd\u8981\u3001\u5f88\u91cd\u8981\u7684\u5bf6\u7269\u3002\u6240\u4ee5...\u6240\u4ee5..."},
+{image:"img/e3/e3-102.png",text:"\u6c42\u6c42\u4f60\u4e86...\u8acb\u4f60\u9084\u7d66\u6211\u5427..."},{image:"img/e3/e3-103.png",text:"\u30d4\u30e5\u30a6\u30a6..."},{image:"img/e3/e3-104.png",text:"\u554a...\u4f60\u771f\u7684\u9858\u610f\u9084\u7d66\u6211\u55ce\uff1f"},{image:"img/e3/e3-105.png",text:"\u30d4\u30e5\u30a6\u30a6"},{image:"img/e3/e3-106.png",text:"\u8b1d\u8b1d\u4f60...\uff01"},{image:"img/e3/e3-107.png",text:"\u90a3\u500b...\u96e3\u9053\u8aaa\uff0c\u4f60\u559c\u6b61\u9019\u7a2e\u9999\u5473\u55ce\uff1f"},
+{image:"img/e3/e3-108.png",text:"\u30d4\u30e5\u30a6\u30a6"},{image:"img/e3/e3-109.png",text:"\u547c\u547c\u547c\uff08\u7b11\u8072\uff09\uff0c\u662f\u559c\u6b61\u7684\u5c0d\u5427\u3002\u6211\u4e5f\u5f88\u559c\u6b61\u7684"},{image:"img/e3/e3-110.png",text:"\u662f\u5c0d\u9019\u7a2e\u9999\u5473\u6709\u8208\u8da3\u55ce\uff1f"},{image:"img/e3/e3-111.png",text:"\u30d4\u30e5\u30a6\u30a6...\u30d4\u30e5\u30a6\u30a6\u30a6\u30a6\u30a6\u30a6"},{image:"img/e3/e3-114.png",text:"...\u6b38\uff1f\u5c0d\u8abf\u88fd\u51fa\u9019\u7a2e\u7f8e\u5999\u9999\u5473\u7684\u4eba\u611f\u8208\u8da3...?"},
+{image:"img/e3/e3-115.png",text:"\u304f\u308b\u307f\u5b78\uff5e\u59d0\uff01"},{image:"img/e3/e3-116.png",text:"\u63f4\u8ecd\u4f86\u4e86\uff01"},{image:"img/e3/e3-117.png",text:"\u554a\uff0c\u7b49\u4e00\u4e0b..."},{image:"img/e3/e3-118.png",text:"..."},{image:"img/e3/e3-119.png",text:"\u554a\uff0c\u53c8\u7d66\u5b83\u8dd1\u6389\u4e86\uff01"},{image:"img/e3/e3-121.png",text:"..."},{image:"img/e3/e3-122.png",text:"...\u55ef\uff1f\u55c5\u55c5...\u597d\u50cf\u6709\u4e00\u9663\u9999\u5473\u50b3\u4f86..."},
+{image:"img/e3/e3-123.png",text:"\u54e6\u54e6\u3002\u304f\u308b\u307f\u4f60\u596a\u56de\u90a3\u500b\u74f6\u5b50\u4e86\u5462"},{image:"img/e3/e3-124.png",text:"\u4e0d...\u4e0d\u662f\u596a\u56de\u800c\u662f\u5b83\u9084\u6211\u7684"},{image:"img/e3/e3-125.png",text:"\u547c\u59c6...\u9084\u4f60\uff1f\u4f60\u662f\u8aaa\u90a3\u96bb\u751f\u7269\u9084\u4f60\u7684\u55ce\uff1f"},{image:"img/e3/e3-126.png",text:"\u55ef\uff0c\u5c31\u662f\u90a3\u6a23\u3002\u62dc\u8a17\u5b83\u7684\u6642\u5019\u5b83\u4e5f\u660e\u767d"},
+{image:"img/e3/e3-128.png",text:"\u62dc\u8a17\u90a3\u7a2e\u751f\u7269...\u9019\u7a2e\u4e8b\u6709\u53ef\u80fd\u55ce...\uff1f"},{image:"img/e3/e3-129.png",text:"\u9019\u80a1\u9999\u5473...\u662f\u30b7\u30e3\u30cd\u30cd\u7684\u9999\u6c34\u5462"},{image:"img/e3/e3-130.png",text:"\u6211\u73fe\u5728\u660e\u767d\u4e86\uff0c\u304f\u308b\u307f\u5b78\u59d0\u662f\u9760\u9019\u9999\u5473\u8ffd\u8e64\u5b83\u7684\u5462"},{image:"img/e3/e3-135.png",text:"\u55ef\uff0c\u5c31\u662f\u90a3\u6a23"},{image:"img/e3/e3-136.png",
+text:"\u8aaa\u8d77\u4f86...\u304f\u308b\u307f\u5b78\u59d0\uff0c\u4f60\u597d\u50cf\u8aaa\u904e\u6b78\u9084\u5abd\u5abd\u8a18\u61b6\u7684\u4e8b\u5462..."},{image:"img/e3/e3-140.png",text:"\u90a3\u9999\u6c34\u662f\u5145\u6eff\u56de\u61b6\u7684\u55ce\uff1f"},{image:"img/e3/e3-142.png",text:"\u55ef..."},{image:"img/e3/e3-143.png",text:"\u5abd\u5abd\u6700\u559c\u6b61\u9019\u7a2e\u9999\u6c34\u4e86"},{image:"img/e3/e3-144.png",text:"\u50cf\u82b1\u4e00\u6a23\uff0c\u751c\u871c\u6e05\u5e7d\u7684\u9999\u5473..."},
+{image:"img/e3/e3-145.png",text:"\u6211\u60f3\u6210\u70ba\u5abd\u5abd\u90a3\u6a23\u7684\u4eba\uff0c\u65bc\u662f\u554f\u5979\u80fd\u4e0d\u80fd\u7d66\u6211\u90a3\u74f6\u9999\u6c34"},{image:"img/e3/e3-146.png",text:"\u5abd\u5abd\u56d1\u5490\u6211\u8981\u6210\u70ba\u4e00\u540d\u4ead\u4ead\u7389\u7acb\u7684\u5973\u6027\uff0c\u7136\u5f8c\u5c07\u9999\u6c34\u9001\u6211"},{image:"img/e3/e3-147.png",text:"\u6240\u4ee5\uff0c\u90a3\u74f6\u9999\u6c34\u662f\u5abd\u5abd\u7559\u4e0b\u4f86\uff0c\u4e00\u4efd\u860a\u542b\u4e86\u56de\u61b6\u7684\u907a\u7269"},
+{image:"img/e3/e3-148.png",text:"\u539f\u4f86\u662f\u9019\u6a23\u5462..."},{image:"img/e3/e3-149.png",text:"\u8f09\u6eff\u56de\u61b6\u7684\u9999\u6c34\uff0c\u80fd\u5920\u62ff\u56de\u4f86\u5be6\u5728\u592a\u597d\u4e86"},{image:"img/e3/e3-150.png",text:"\u55ef...\uff01"},{image:"img/e3/e3-151.png",text:"\uff08\u6c99\u6c99\u8072\uff09"},{image:"img/e3/e3-152.png",text:"...\u5927\u5bb6\u90fd\u807d\u5230\u6211\u55ce\uff1f"},{image:"img/e3/e3-153.png",text:"\u8001\u5e2b\uff01\u4f60\u5230\u5e95\u53bb\u5e79\u4ec0\u9ebc\u4e86\uff01"},
+{image:"img/e3/e3-154.png",text:"\u4e0d\u597d\u610f\u601d...\u6211\u662f\u5728\u8ffd\u8e64\u90a3\u751f\u7269\u7684\u751f\u547d\u9ad4\u983b\u7387..."},{image:"img/e3/e3-155.png",text:"\u983b\u7387\u6d88\u5931\u4e86..."},{image:"img/e3/e3-156.png",text:"\u6b38\uff01\uff1f\u90a3\u662f\u8aaa\u6d88\u5931\u7684\u4e00\u4e7e\u4e8c\u6de8\u4e86\u55ce\uff1f"},{image:"img/e3/e3-157.png",text:"\u554a...\u4f60\u53ef\u4ee5\u9019\u6a23\u8aaa"},{image:"img/e3/e3-158.png",text:"\u8001\u5e2b\uff0c\u6211\u53ef\u4ee5\u554f\u4e00\u689d\u554f\u984c\u55ce\uff1f"},
+{image:"img/e3/e3-160.png",text:"\u554a\uff0c\u7576\u7136\u3002\u600e\u9ebc\u4e86\u55ce\uff1f"},{image:"img/e3/e3-161.png",text:"\u90a3\u96bb\u751f\u7269...\u771f\u7684\u662f\u90a3\u7a2e\u751f\u7269\uff08\u30a4\u30ed\u30a6\u30b9\uff09\u55ce\uff1f"},{image:"img/e3/e3-163.png",text:"\u6afb\uff1f\u4f60\u5230\u5e95\u5728\u8aaa\u5565...\u90a3\u600e\u9ebc\u770b\u4e5f\u662f\u30a4\u30ed\u30a6\u30b9\u5427"},{image:"img/e3/e3-164.png",text:"...\u8001\u5be6\u8aaa\uff0c\u6211\u4e5f\u4e0d\u77e5\u9053"},{image:"img/e3/e3-166.png",
+text:"\u6b38\uff5e\uff01\uff1f\u5373\u662f\u8aaa\u90a3\u4e5f\u6709\u53ef\u80fd\u4e0d\u662f\u30a4\u30ed\u30a6\u30b9\uff1f"},{image:"img/e3/e3-167.png",text:"\u6211\u4e5f\u4e0d\u80fd\u5984\u4e0b\u5b9a\u8ad6\u8aaa\u5b83\u4e0d\u662f\u30a4\u30ed\u30a6\u30b9"},{image:"img/e3/e3-168.png",text:"\u4f46\u662f\uff0c\u6211\u4e5f\u4e0d\u80fd\u65b7\u8a00\u5b83\u662f\u30a4\u30ed\u30a6\u30b9"},{image:"img/e3/e3-169.png",text:"\u90a3\u96bb\u751f\u7269\u7684\u751f\u547d\u9ad4\u983b\u7387\u8ddf\u5176\u4ed6\u30a4\u30ed\u30a6\u30b9\u6709\u9ede\u4e0d\u540c"},
+{image:"img/e3/e3-170.png",text:"\u4e0d\u662f\u30a4\u30ed\u30a6\u30b9\uff0c\u4f46\u5f88\u50cf\u662f\u30a4\u30ed\u30a6\u30b9\u7684\u5b58\u5728..."},{image:"img/e3/e3-171.png",text:"\u90a3\u96bb\u767d\u8272\u751f\u7269\u7684\u771f\u8eab\u5230\u5e95\u662f\u4ec0\u9ebc..."},{image:"img/e3/e3-172.png",text:"\u7e3d\u800c\u8a00\u4e4b\uff0c\u9019\u6b21\u4efb\u52d9\u7d50\u675f\u3002\u8981\u50b3\u9001\u4f60\u5011\u56de\u53bb\uff0c\u5148\u5f9e\u9019\u88e1\u96e2\u958b\u5427"},{image:"img/e3/e3-173.png",text:"\u597d\u7684\uff0c\u660e\u767d\u4e86..."},
+{image:"img/e3/e3-174.png",text:"\u60f3\u518d\u8ddf\u90a3\u5b69\u5b50\u8ac7\u8ac7\u5462..."},{image:"img/e3/e3-175.png",text:"\u4e0b\u4e00\u6b21\uff0c\u8981\u4fc3\u819d\u9577\u8ac7..."},{image:"img/e3/e3-176.png",text:"\u304f\u308b\u307f\u5b78\uff5e\u59d0\uff0c\u8981\u8d70\u4e86\u55b2\u3002"},{image:"img/e3/e3-177.png",text:"\u304f\u308b\u307f\uff0c\u53c8\u6389\u4e86\u4ec0\u9ebc\u6771\u897f\u4e86\u55ce\uff1f"},{image:"img/e3/e3-178.png",text:"\u6c92\u6709...\u8d70\u5427"},{image:"img/e3/e3-179.png",
+text:"\u5982\u679c\u80fd\u518d\u6b21\u76f8\u898b\u5c31\u597d\u4e86..."},{image:"img/e3/e3-180.png",text:"\u661f\u5b88\u5b9a\u671f\u6e2c\u9a57 \uff5e\u8b0e\u4e4b\u751f\u7269 \u63a5\u89f8\u7bc7\uff5e \u5168\u7bc7\u5b8c"}];this.count=this.scenes.length;this.scene=this.parsehash(b);$("#storytotal").text(this.count);this.loadscene(this.scene)};
+storyteller.prototype.updatescene=function(a,b){this.block=1;$("#storyimage").attr("src",a).on("load",function(){$("#loadingmodal").closeModal();$("#storycontent").text(b);that.block=0})};storyteller.prototype.preload=function(a){var b=new Image,c=new Image;b.src=this.scenes[a+1].image;c.src=this.scenes[a+2].image};
+storyteller.prototype.loadscene=function(a){this.scene=a;$("#nowprogress").text(this.scene+1);if(a<this.count)a!==this.count&&(window.location.hash=a+1),this.updatescene(this.scenes[a].image,this.scenes[a].text);else return this.scene=this.count-1,!1;a<parseInt(this.count)-2&&this.preload(a)};storyteller.prototype.reloadscene=function(a){qi=this.parsehash(a);qi!==this.scene&&this.loadscene(qi)};
+storyteller.prototype.prevscene=function(){if(0==this.scene||1==this.block)return 1==this.block&&$("#loadingmodal").openModal(),!1;--this.scene;this.loadscene(this.scene)};storyteller.prototype.nextscene=function(){if(1==this.block)return $("#loadingmodal").openModal(),!1;this.scene+=1;this.loadscene(this.scene)};
+$(function(){var a=new storyteller;a.init("e1.json",parseInt(window.location.hash.substring(1)));$(window).on("hashchange",function(){a.reloadscene(parseInt(window.location.hash.substring(1)))});$("#storyimage").on("vclick swipeleft",function(){a.nextscene()});$("#storyimage").on("swiperight",function(){a.prevscene()});$("#navprevbtn").on("vclick",function(){a.prevscene()});$("#navnextbtn").on("vclick",function(){a.nextscene()})});
+  </script>
+</head>
+<body>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GAWiki 第99區</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h3>謎のイウロス 接触編 故事章節 くるみの宝物 劇情翻譯</h3>
+        <h5>遊戲：戰鬥女子高校 / 文章作者：日向</h5>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ratop" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="4650440851" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class="row" id="story">
+        <div class="col s12">
+          <div style="font-size: 0.8em">（翻頁可點擊圖像、在圖上左右撥動或者使用圖像下方按鈕）</div>
+          <div id="storycontainer">
+            <img src="img/e3/e3-96.png" alt="劇情圖片" id="storyimage">
+            <div id="storycontent">～地球 地下街～</div>
+          </div>
+          <div id="storyprogress" style="text-align: center; color: #333">
+            <span id="nowprogress">1</span>/<span id="storytotal"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navprevbtn">前一張</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navnextbtn">後一張</a></div>
+	  </div>
+	  <div class="row">
+        <div class="col s6 offset-s3 m6"><a href="e2.html" class="waves-effect waves-light btn-large" style="width: 100%">上一章</a></div>
+      </div>
+      <div class="row">
+        Facebook 粉絲專頁：<a href="https://www.facebook.com/highschoolbattlegirl" target="_blank">戰鬥女子高校 Battle Girl High School</a>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle rabottom" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="6127174054" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div id="loadingmodal" class="modal">
+        <div class="modal-content">
+          <p>載入中，請稍候。</p>
+          <p>如等候超過10秒，請刷新頁面。</p>
+        </div>
+      </div>
+      <div class="row">
+        <small>屬於玩家們的空間 - <a href="http://gawiki.com" target="_blank">GAWiki</a> 分支</small>
+      </div>
+    </div>
+</body>
+</html>

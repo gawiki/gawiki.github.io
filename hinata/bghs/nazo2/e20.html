@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>謎のイロウス 接触編 故事章節 追跡の決め手は嗅覚！？ 劇情翻譯 | 戰鬥女子高校 - GAWiki</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <style type="text/css">
+    nav {background-color: #1976D2;}
+    .ratop, .rabottom {width: 320px; height: 100px;}
+    @media (min-width:500px) { .ratop, .rabottom {width: 468px; height: 60px;} }
+    @media (min-width:800px) { .ratop, .rabottom {width: 728px; height: 90px;} }
+    #story {text-align: center;}
+    #storycontainer {position: relative;}
+    #storyimage {display: block; max-width: 100%; height: auto; vertical-align: center;}
+    #storycontent {position: absolute; bottom: 0; left: 0; width: 100%; background-color: #000; opacity: 0.6; color: #FFF; padding-top: 6px; padding-bottom: 6px; font-size: 14pt;}
+  </style>
+  <script>
+var storyteller=function(){that=this;this.scenes=[];this.block=this.count=this.scene=0};storyteller.prototype.parsehash=function(a){return"undefined"===typeof a||isNaN(a)||2>a?0:a>=this.count?this.count-1:a-1};
+storyteller.prototype.init=function(a,b){this.scenes=[{image:"img/e2/e2-68.png",text:"\uff5e\u5730\u7403 \u5730\u4e0b\u8857\uff5e"},{image:"img/e2/e2-69.png",text:"\u55da\uff5e\u59c6...\u90a3\u96bb\u767d\u8272\u751f\u7269\u5b8c\u5168\u6d88\u5931\u4e86\u54e6..."},{image:"img/e2/e2-70.png",text:"\u8001\u5e2b\uff0c\u4f60\u77e5\u9053\u767d\u8272\u751f\u7269\u73fe\u5728\u5728\u54ea\u55ce\uff1f"},{image:"img/e2/e2-72.png",text:"\u90a3\u500b...\u56e0\u7232\u53d7\u5230\u7634\u6c23\u5f71\u97ff\u6240\u4ee5\u627e\u4e0d\u5230\u4e86"},{image:"img/e2/e2-73.png",
+text:"\u4e0d\u662f\u5427...\u96e3\u5f97\u6211\u5011\u90fd\u8ffd\u5230\u9019\u908a\u4f86\u4e86..."},{image:"img/e2/e2-76.png",text:"...\u304f\u308b\u307f\uff1f\u6709\u4ec0\u9ebc\u4e8b\u55ce\uff1f"},{image:"img/e2/e2-77.png",text:"\u55c5\u55c5\u55c5..."},{image:"img/e2/e2-79.png",text:"...\u304f\u308b\u307f\u5b78\u59d0\uff1f\u4f60\u662f\u5728\u55c5\u4ec0\u9ebc\u6c23\u5473\uff1f"},{image:"img/e2/e2-80.png",text:"\u55c5\u55c5\u55c5..."},{image:"img/e2/e2-81.png",text:"\u90a3\u908a\u55b2"},{image:"img/e2/e2-82.png",
+text:"\u304f\u3001\u304f\u308b\u307f\u5b78\u59d0\uff01\uff1f\u7b49\u7b49\u6211\u554a\uff01"},{image:"img/e2/e2-83.png",text:"\u55c5\u55c5\u55c5.."},{image:"img/e2/e2-84.png",text:"\u304f\u308b\u307f\u5b78\u59d0...\u4e0d\u8ad6\u600e\u6a23\u8aaa\uff0c\u5149\u9760\u55c5\u89ba\u4f86\u627e\u90a3\u7a2e\u751f\u7269\u662f\u4e0d\u53ef\u80fd\u7684..."},{image:"img/e2/e2-85.png",text:"\u30d4\u30e5\u30a6\u30a6\u30a6\u30a6\u30a6\u30a6"},{image:"img/e2/e2-86.png",text:"\u771f\u3001\u771f\u7684\u51fa\u73fe\u4e86\uff01"},
+{image:"img/e2/e2-87.png",text:"\u8acb\u4f60\u9084\u7d66\u6211\u5abd\u5abd\u7684\u8a18\u61b6\uff01"},{image:"img/e2/e2-88.png",text:"...\u5abd\u5abd\u7684\u8a18\u61b6\uff1f"},{image:"img/e2/e2-89.png",text:"\u30d4\u30e5\u30a6\u30a6..."},{image:"img/e2/e2-91.png",text:"\u5b83\u53c8\u6d88\u5931\u4e86\uff01"},{image:"img/e2/e2-92.png",text:"\u7d55\u5c0d\u8981\u8b93\u5b83\u9084\u7d66\u6211...\uff01"},{image:"img/e2/e2-94.png",text:"\u304f\u3001\u304f\u308b\u307f\u5b78\u59d0\uff01\u7b49\u7b49\uff01\u81ea\u5df1\u4e00\u500b\u5148\u8d70\u662f\u5f88\u5371\u96aa\u7684\u554a\uff01"},
+{image:"img/e2/e2-95.png",text:"\u6953\uff01\u8981\u8b39\u614e\u884c\u4e8b\uff01\u90a3\u96bb\u751f\u7269\u96a8\u6642\u6703\u518d\u51fa\u73fe\u554a\uff01"}];this.count=this.scenes.length;this.scene=this.parsehash(b);$("#storytotal").text(this.count);this.loadscene(this.scene)};
+storyteller.prototype.updatescene=function(a,b){this.block=1;$("#storyimage").attr("src",a).on("load",function(){$("#loadingmodal").closeModal();$("#storycontent").text(b);that.block=0})};storyteller.prototype.preload=function(a){var b=new Image,c=new Image;b.src=this.scenes[a+1].image;c.src=this.scenes[a+2].image};
+storyteller.prototype.loadscene=function(a){this.scene=a;$("#nowprogress").text(this.scene+1);if(a<this.count)a!==this.count&&(window.location.hash=a+1),this.updatescene(this.scenes[a].image,this.scenes[a].text);else return this.scene=this.count-1,!1;a<parseInt(this.count)-2&&this.preload(a)};storyteller.prototype.reloadscene=function(a){qi=this.parsehash(a);qi!==this.scene&&this.loadscene(qi)};
+storyteller.prototype.prevscene=function(){if(0==this.scene||1==this.block)return 1==this.block&&$("#loadingmodal").openModal(),!1;--this.scene;this.loadscene(this.scene)};storyteller.prototype.nextscene=function(){if(1==this.block)return $("#loadingmodal").openModal(),!1;this.scene+=1;this.loadscene(this.scene)};
+$(function(){var a=new storyteller;a.init("e1.json",parseInt(window.location.hash.substring(1)));$(window).on("hashchange",function(){a.reloadscene(parseInt(window.location.hash.substring(1)))});$("#storyimage").on("vclick swipeleft",function(){a.nextscene()});$("#storyimage").on("swiperight",function(){a.prevscene()});$("#navprevbtn").on("vclick",function(){a.prevscene()});$("#navnextbtn").on("vclick",function(){a.nextscene()})});
+  </script>
+</head>
+<body>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GAWiki 第99區</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h3>謎のイウロス 接触編 故事章節 追跡の決め手は嗅覚！？ 劇情翻譯</h3>
+        <h5>遊戲：戰鬥女子高校 / 文章作者：日向</h5>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ratop" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="4650440851" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class="row" id="story">
+        <div class="col s12">
+          <div style="font-size: 0.8em">（翻頁可點擊圖像、在圖上左右撥動或者使用圖像下方按鈕）</div>
+          <div id="storycontainer">
+            <img src="img/e2/e2-68.png" alt="劇情圖片" id="storyimage">
+            <div id="storycontent">～地球 地下街～</div>
+          </div>
+          <div id="storyprogress" style="text-align: center; color: #333">
+            <span id="nowprogress">1</span>/<span id="storytotal"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navprevbtn">前一張</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navnextbtn">後一張</a></div>
+	  </div>
+	  <div class="row">
+        <div class="col s6"><a href="e1.html" class="waves-effect waves-light btn-large" style="width: 100%">上一章</a></div>
+		<div class="col s6"><a href="e3.html" class="waves-effect waves-light btn-large" style="width: 100%">下一章</a></div>
+      </div>
+      <div class="row">
+        Facebook 粉絲專頁：<a href="https://www.facebook.com/highschoolbattlegirl" target="_blank">戰鬥女子高校 Battle Girl High School</a>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle rabottom" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="6127174054" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div id="loadingmodal" class="modal">
+        <div class="modal-content">
+          <p>載入中，請稍候。</p>
+          <p>如等候超過10秒，請刷新頁面。</p>
+        </div>
+      </div>
+      <div class="row">
+        <small>屬於玩家們的空間 - <a href="http://gawiki.com" target="_blank">GAWiki</a> 分支</small>
+      </div>
+    </div>
+</body>
+</html>
