@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renge Happy Birthday Story ため息の理由は... translations | Battle Girl High School - GAWiki</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <style type="text/css">
+    .ra {width: 320px; height: 100px;}
+    @media (min-width:500px) { .ra {width: 468px; height: 60px;} }
+    @media (min-width:800px) { .ra {width: 728px; height: 90px;} }
+    #story {text-align: center;}
+    #storycontainer {position: relative;}
+    #storyimage {display: block; max-width: 100%; height: auto; vertical-align: center;}
+    #storycontent {position: absolute; bottom: 0; left: 0; width: 100%; background-color: #000; opacity: 0.6; color: #FFF; padding-top: 6px; padding-bottom: 6px; font-size: 14pt;}
+  </style>
+  <script>
+var storyteller=function(){that=this;this.scenes=[];this.block=this.count=this.scene=0};storyteller.prototype.parsehash=function(a){return"undefined"===typeof a||isNaN(a)||2>a?0:a>=this.count?this.count-1:a-1};
+storyteller.prototype.init=function(a,b){this.scenes=[{"image":"img/e2/e2-22.png","text":"*sigh*"},
+{"image":"img/e2/e2-23.png","text":"Renge, are you free now?"},
+{"image":"img/e2/e2-25.png","text":"What is it?"},
+{"image":"img/e2/e2-26.png","text":"I know it's a bit late but, take this, it's a present for you. Happy Birthday!"},
+{"image":"img/e2/e2-27.png","text":"...Oh, ok..."},
+{"image":"img/e2/e2-28.png","text":"Erm...well..."},
+{"image":"img/e2/e2-29.png","text":"...What?"},
+{"image":"img/e2/e2-30.png","text":"...Are you angry?"},
+{"image":"img/e2/e2-31.png","text":"Well..."},
+{"image":"img/e2/e2-32.png","text":"Sorry..."},
+{"image":"img/e2/e2-33.png","text":"(Doubt)...Haa? For what?"},
+{"image":"img/e2/e2-34.png","text":"For...forgetting your birthday..."},
+{"image":"img/e2/e2-35.png","text":"Ah, I see..."},
+{"image":"img/e2/e2-36.png","text":"Huh? That was not the reason that makes you angry?"},
+{"image":"img/e2/e2-37.png","text":"So you thought I am that kind of girl who gets angry for that?"},
+{"image":"img/e2/e2-38.png","text":"(OS) Honestly, yes..."},
+{"image":"img/e2/e2-39.png","text":"Then, why?"},
+{"image":"img/e2/e2-40.png","text":"That was..."},
+{"image":"img/e2/e2-42.png","text":"I thought it's my birthday so I have asked Asuha to kiss me. And I was rejected!"},
+{"image":"img/e2/e2-43.png","text":"..."},
+{"image":"img/e2/e2-44.png","text":"It is my birthday, isn't it? Why can't she just give me a kiss?"},
+{"image":"img/e2/e2-45.png","text":"And you get angry for that..."},
+{"image":"img/e2/e2-46.png","text":"To me, a kiss is a better present than anything else!"},
+{"image":"img/e2/e2-47.png","text":"Or..."},
+{"image":"img/e2/e2-48.png","text":"Are you willing to kiss me instead?"},
+{"image":"img/e2/e2-49.png","text":"Wha, wha, wha, what are you talking about?"},
+{"image":"img/e2/e2-50.png","text":"Ah...You don't feel like it..."},
+{"image":"img/e2/e2-51.png","text":"Today is my birthday... *tears*(´Д⊂"},
+{"image":"img/e2/e2-53.png","text":"The problem wasn't feeling like to or not..."},
+{"image":"img/e2/e2-54.png","text":"So you mean the other way round?"},
+{"image":"img/e2/e2-55.png","text":"If you say so..."},
+{"image":"img/e2/e2-57.png","text":"Then, give Renge a kiss..."},
+{"image":"img/e2/e2-58.png","text":"Ehhhhhh!?"},
+{"image":"img/e2/e2-59.png","text":"Nee, ok?"},
+{"image":"img/e2/e2-60.png","text":"Give·me·a·kiss♡"},
+{"image":"img/e2/e2-61.png","text":"That, that was a bit..."},
+{"image":"img/e2/e2-62.png","text":"Ahahahahaha♪"},
+{"image":"img/e2/e2-63.png","text":"...？"},
+{"image":"img/e2/e2-64.png","text":"I was joking."},
+{"image":"img/e2/e2-65.png","text":"Jo, joking...!?"},
+{"image":"img/e2/e2-66.png","text":"C'mon! I've always been saying you shouldn't make fun of teachers right?"},
+{"image":"img/e2/e2-67.png","text":"Ala? Then better be taking it serious?"},
+{"image":"img/e2/e2-68.png","text":"I don't mean that!"},
+{"image":"img/e2/e2-69.png","text":"Ahahaha♪ I knew it."},
+{"image":"img/e2/e2-70.png","text":"I should teach you what is proper etiquette..."},
+{"image":"img/e2/e2-71.png","text":"Anyway..."},
+{"image":"img/e2/e2-72.png","text":"...Hmm?"},
+{"image":"img/e2/e2-73.png","text":"Thank you for your birthday present, sir!"},
+{"image":"img/e2/e2-74.png","text":"よろしくお願いします♡ (Note: No English equivalent)"},
+{"image":"img/e2/e2-75.png","text":"Ah,ahh...Same here..."},
+{"image":"img/e2/e2-76.png","text":"(OS) Should I work harder or keep it as is?"}];this.count=this.scenes.length;this.scene=this.parsehash(b);$("#storytotal").text(this.count);this.loadscene(this.scene)};
+storyteller.prototype.updatescene=function(a,b){this.block=1;$("#storyimage").attr("src",a).on("load",function(){$("#loadingmodal").closeModal();$("#storycontent").text(b);that.block=0})};storyteller.prototype.preload=function(a){var b=new Image,c=new Image;b.src=this.scenes[a+1].image;c.src=this.scenes[a+2].image};
+storyteller.prototype.loadscene=function(a){this.scene=a;$("#nowprogress").text(this.scene+1);if(a<this.count)a!==this.count&&(window.location.hash=a+1),this.updatescene(this.scenes[a].image,this.scenes[a].text);else return this.scene=this.count-1,!1;a<parseInt(this.count)-2&&this.preload(a)};storyteller.prototype.reloadscene=function(a){qi=this.parsehash(a);qi!==this.scene&&this.loadscene(qi)};
+storyteller.prototype.prevscene=function(){if(0==this.scene||1==this.block)return 1==this.block&&$("#loadingmodal").openModal(),!1;--this.scene;this.loadscene(this.scene)};storyteller.prototype.nextscene=function(){if(1==this.block)return $("#loadingmodal").openModal(),!1;this.scene+=1;this.loadscene(this.scene)};
+$(function(){var a=new storyteller;a.init("e1.json",parseInt(window.location.hash.substring(1)));$(window).on("hashchange",function(){a.reloadscene(parseInt(window.location.hash.substring(1)))});$("#storyimage").on("vclick swipeleft",function(){a.nextscene()});$("#storyimage").on("swiperight",function(){a.prevscene()});$("#navprevbtn").on("vclick",function(){a.prevscene()});$("#navnextbtn").on("vclick",function(){a.nextscene()})});
+  </script>
+</head>
+<body>
+  <div data-role="page">
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GAWiki 第99區</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h3>Renge Happy Birthday Story ため息の理由は......&#9825; Translations</h3>
+        <h5>Translated by 日向</h5>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ra" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="4650440851" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class="row" id="story">
+        <div class="col s12">
+          <div style="font-size: 0.8em">(Click, swipe the image or use the buttons below to navigate)</div>
+          <div id="storycontainer">
+            <img src="img/e2/e2-22.png" alt="Story image" id="storyimage">
+            <div id="storycontent">*sigh*</div>
+          </div>
+          <div id="storyprogress" style="text-align: center; color: #333">
+            <span id="nowprogress">1</span>/<span id="storytotal"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navprevbtn">Previous</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navnextbtn">Next</a></div>
+        <div class="col s6 offset-s3 m6"><a href="e1e.html" class="waves-effect waves-light btn-large" style="width: 100%">Previous chapter</a></div>
+      </div>
+      <div class="row">
+        Facebook Fan Page：<a href="https://www.facebook.com/highschoolbattlegirl" target="_blank">戰鬥女子高校 Battle Girl High School</a>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ra" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="6127174054" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div id="loadingmodal" class="modal">
+        <div class="modal-content">
+          <p>Loading, please wait...</p>
+          <p>Please refresh the page if it is taking longer than 10 seconds...</p>
+        </div>
+      </div>
+      <div class="row">
+        <small>Area for players - a <a href="http://gawiki.com" target="_blank">GAWiki</a> project</small>
+      </div>
+    </div>
+</body>
+</html>
