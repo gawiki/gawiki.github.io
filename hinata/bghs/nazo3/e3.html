@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>謎のイロウス 対話編 故事章節 引き抜け！勇者の剣！ 劇情翻譯 | 戰鬥女子高校 - GAWiki</title>
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <style type="text/css">
+    nav {background-color: #1976D2;}
+    .ra {width: 320px; height: 100px;}
+    @media (min-width:500px) { .ra {width: 468px; height: 60px;} }
+    @media (min-width:800px) { .ra {width: 728px; height: 90px;} }
+    #story {text-align: center;}
+    #storycontainer {position: relative;}
+    #storyimage {display: block; max-width: 100%; height: auto; vertical-align: center;}
+    #storycontent {position: absolute; bottom: 0; left: 0; width: 100%; background-color: #000; opacity: 0.6; color: #FFF; padding-top: 6px; padding-bottom: 6px; font-size: 14pt;}
+  </style>
+  <script>
+var storyteller=function(){that=this;this.scenes=[];this.block=this.count=this.scene=0};storyteller.prototype.parsehash=function(a){return"undefined"===typeof a||isNaN(a)||2>a?0:a>=this.count?this.count-1:a-1};
+storyteller.prototype.init=function(a,b){this.scenes=[{image:"img/e3/e3-1.png",text:"\uff5e\u5730\u7403\u00b7\u8d6b\u65af\u63d0\u4e9e\u706b\u5c71\uff5e"},{image:"img/e3/e3-3.png",text:"\u3086\u308a\u5b78\u59d0\uff5e\uff01\u660e\u65e5\u8449\u5b78\u59d0\uff5e\uff01"},{image:"img/e3/e3-4.png",text:"\u554a\u54a7\uff5e\u771f\u5947\u602a\u5462\u3002\u660e\u660e\u525b\u624d\u9084\u5728\u4e00\u8d77\u7684\u8aaa..."},{image:"img/e3/e3-5.png",text:"\u55ef\uff1f\u525b\u624d\u597d\u50cf\u6709\u4ec0\u9ebc\u5728\u9583\u7684\u6a23\u5b50...\u5230\u5e95\u662f\u4ec0\u9ebc\uff1f"},
+{image:"img/e3/e3-6.png",text:"\u554a\uff5e\uff01\u5ca9\u77f3\u4e0a\u63d2\u8457\u4e00\u628a\u528d\uff01"},{image:"img/e3/e3-7.png",text:"\u9019\u5c31\u662f\uff0c\u52c7\u8005\u4e4b\u528d\uff01\uff1f"},{image:"img/e3/e3-8.png",text:"...\u600e\u9ebc\u53ef\u80fd\u561b\u3002\u4e00\u5b9a\u662f\u67d0\u4eba\u525b\u597d\u628a\u528d\u63d2\u5728\u9019\u908a\u7684\u60e1\u4f5c\u5287\u5427"},{image:"img/e3/e3-9.png",text:"\u4f46\u662f\uff0c\u4e0d\u7ba1\u5982\u4f55\u5148\u8a66\u8a66\u62d4\u51fa\u4f86\u770b\u770b\u5427..."},
+{image:"img/e3/e3-10.png",text:"\uff08\u7528\u529b\uff09\u55da\u5495\u5495\u5495...\u554a\u54a7\uff1f"},{image:"img/e3/e3-11.png",text:"\u53ef\u80fd\u6211\u4e0d\u662f\u6210\u70ba\u52c7\u8005\u7684\u6750\u6599\u5462..."},{image:"img/e3/e3-12.png",text:"\u8a71\u662f\u9019\u9ebc\u8aaa\uff0c\u6211\u624d\u4e0d\u662f\u76f8\u4fe1\u6545\u4e8b\u4e2d\u7684\u60c5\u7bc0\u5462..."},{image:"img/e3/e3-13.png",text:"\u771f\u53ef\u60dc\u5462..."},{image:"img/e3/e3-14.png",text:"\u54c7\uff0c\u51fa\u73fe\u4e86\uff01"},
+{image:"img/e3/e3-15.png",text:"...\u554a\u54a7\uff1f\u525b\u624d\u5b83\u597d\u50cf\u8aaa\u8a71\u4e86...\u662f\u6211\u7684\u932f\u89ba\u55ce..."},{image:"img/e3/e3-16.png",text:"\u4e0d\u662f\u932f\u89ba\u55b2"},{image:"img/e3/e3-17.png",text:"\uff08\u9a5a\uff09\u679c\u7136\u8aaa\u8a71\u4e86\uff01"},{image:"img/e3/e3-18.png",text:"\u56e0\u70ba\u4f60\u8a31\u4e86\u60f3\u4f86\u9019\u908a\u7684\u9858\u671b\uff0c\u6240\u4ee5\u6211\u5e36\u4f60\u4f86\u9019\u88e1\u4e86\u55b2"},{image:"img/e3/e3-19.png",text:"...\u6211\u8a31\u4e86\u9858\uff1f\u90a3\u662f\u4ec0\u9ebc\u610f\u601d\uff1f"},
+{image:"img/e3/e3-20.png",text:"\u60f3\u554f\u4f60\u4e00\u500b\u554f\u984c"},{image:"img/e3/e3-21.png",text:"\u70ba\u4ec0\u9ebc\u60f3\u8981\u8b8a\u5f37\uff1f"},{image:"img/e3/e3-22.png",text:"\u70ba\u4ec0\u9ebc\u55ce...\u8981\u5b88\u8b77\u5927\u5bb6\u7684\u8a71\u4e0d\u5f97\u4e0d\u8b8a\u5f37\u554a..."},{image:"img/e3/e3-23.png",text:"\u4e0d\u662f\u70ba\u4e86\u81ea\u5df1\uff0c\u662f\u70ba\u4e86\u5927\u5bb6..."},{image:"img/e3/e3-24.png",text:"\u4f60\u4e0d\u6703\u5bb3\u6015\u8207\u90a3\u7a2e\u751f\u7269\u6230\u9b25\u55ce\uff1f"},
+{image:"img/e3/e3-25.png",text:"\u4e0d...\u4e0d\u6703\u5bb3\u6015\uff01"},{image:"img/e3/e3-26.png",text:"\u771f\u7684\u55ce\uff1f"},{image:"img/e3/e3-27.png",text:"\u6bd4\u8d77\u81ea\u5df1\u6703\u53d7\u50b7\uff0c\u6211\u66f4\u6015\u5927\u5bb6\u6703\u53d7\u5230\u50b7\u5bb3\u554a\uff0c\u6211\u4e0d\u559c\u6b61\u90a3\u6a23\uff01"},{image:"img/e3/e3-28.png",text:"\u90a3\u6a23\u4e0d\u5982\u8a66\u8a66\u770b\u5427..."},{image:"img/e3/e3-29.png",text:"\u9f8d\uff1a\u5495\u54e6\uff5e\uff5e\uff5e"},{image:"img/e3/e3-31.png",
+text:"\u4e0d\uff0c\u4e0d\u884c\u4e86\uff01\u6211\u5011\u7684\u653b\u64ca\u6839\u672c\u7121\u6548\uff01"},{image:"img/e3/e3-32.png",text:"\u55da\u5495...\u9019\u6a23\u4e0b\u53bb\u7684\u8a71...\u6211\u5011\u5c31\u8981\u8f38\u4e86\u554a..."},{image:"img/e3/e3-33.png",text:"\u5927\u4e8b\u4e0d\u5999\uff01\u4e0d\u5feb\u9ede\u5354\u52a9\u5979\u5006\u7684\u8a71"},{image:"img/e3/e3-34.png",text:"\u4f46\u662f\uff0c\u666e\u901a\u7684\u653b\u64ca\u53c8\u6c92\u6709\u7528\u7684\u6a23\u5b50..."},{image:"img/e3/e3-35.png",
+text:"\u554a\uff01\u7528\u90a3\u628a\u528d\u7684\u8a71\u4e5f\u8a31\u80fd\u6253\u5012\u90a3\u689d\u9f8d\u5427\uff01"},{image:"img/e3/e3-36.png",text:"...\u597d\u5427\uff01\u8b93\u6211\u518d\u4e00\u6b21\u8a66\u8a66\u628a\u5b83\u62d4\u51fa\u4f86\u5427\uff01"},{image:"img/e3/e3-37.png",text:"\u6c42\u6c42\u4f60\u4e86\uff01\u8cdc\u4e88\u6211\u529b\u91cf\u5427\uff01"},{image:"img/e3/e3-38.png",text:"\u505a\u3001\u505a\u5230\u4e86...\u505a\u5230\u4e86\uff5e\uff01\u6211\u4e5f\u80fd\u628a\u5b83\u62d4\u51fa\u4f86\u4e86\uff01"},
+{image:"img/e3/e3-39.png",text:"\u3086\u308a\u5b78\u59d0\uff01\u660e\u65e5\u8449\u5b78\u59d0\uff01\u6211\u4f86\u5e6b\u4f60\u5011\u4e86\uff01"},{image:"img/e3/e3-40.png",text:"\u5582\uff0c\u9f8d\uff01\u4f60\u7684\u5c0d\u624b\u662f\u6211\uff01"},{image:"img/e3/e3-41.png",text:"\u9f8d\uff1a\u5495\u54e6\uff5e\uff5e\uff5e"},{image:"img/e3/e3-42.png",text:"\u6211\u53ef\u80fd\u53ea\u662f\u525b\u597d\u628a\u528d\u62d4\u51fa\u4f86\u4e86\uff0c\u4e5f\u8a31\u7b97\u4e0d\u4e0a\u771f\u6b63\u7684\u52c7\u8005..."},
+{image:"img/e3/e3-43.png",text:"\u4f46\u662f\uff01\u6211\u4e0d\u6703\u653e\u68c4\u7684\uff01\u5230\u6700\u5f8c\u4e00\u523b\uff0c\u6211\u4e5f\u7d55\u5c0d\u4e0d\u6703\u653e\u68c4\uff01"},{image:"img/e3/e3-44.png",text:"\u5b78\u59d0\u5011\u81ea\u7136\u4e0d\u7528\u8aaa\uff0c\u9019\u500b\u4e16\u754c\u3001\u672a\u4f86\u548c\u4e00\u5207\uff0c\u5c31\u7531\u6211\u4f86\u5b88\u8b77\u5427\uff01"},{image:"img/e3/e3-45.png",text:"\u5c31\u7b97\u8981\u6211\u8ced\u4e0a\u6027\u547d\u4e5f\u597d\uff01\u8ddf\u4f60\u62fc\u4e86\uff5e\uff5e\uff01"},
+{image:"img/e3/e3-46.png",text:"\uff08\u653b\u64ca\uff09\u554a\uff5e\uff5e\uff5e\uff01"},{image:"img/e3/e3-48.png",text:"\u554a...\u554a\u54a7\uff01\uff1f\u9f8d\u7a81\u7136\u6d88\u5931\u4e86...\uff01"},{image:"img/e3/e3-49.png",text:"\u7adf\u7136\u80fd\u70ba\u4e86\u4ed6\u4eba\u5192\u6b7b\u6230\u9b25..."},{image:"img/e3/e3-50.png",text:"\u660e\u660e\u807d\u8aaa\u4eba\u985e\u9019\u7269\u7a2e\u662f\u81ea\u79c1\u7684..."},{image:"img/e3/e3-51.png",text:"...\u4f60\u5230\u5e95\u5728\u8aaa\u4ec0\u9ebc\uff1f\u4f60\u7a76\u7adf\u662f\u4f55\u65b9\u795e\u8056\uff1f"},
+{image:"img/e3/e3-52.png",text:"\u6211\u561b...\u7528\u4f60\u5011\u7684\u8a9e\u8a00\u4f86\u8868\u9054\u7684\u8a71..."},{image:"img/e3/e3-53.png",text:"\u662f\u4e00\u540d\u300c\u89c0\u6e2c\u8005\u300d\u55b2"},{image:"img/e3/e3-54.png",text:"...\u89c0\u6e2c\u8005\uff1f"},{image:"img/e3/e3-56.png",text:"\u6634\uff01\u596a\u9084\u8ab2\u7a0b\u4e2d\u55ae\u7368\u884c\u52d5\u53ef\u4e0d\u884c\u554a\uff01"},{image:"img/e3/e3-58.png",text:"\u4e00\u500b\u4eba\u64c5\u81ea\u884c\u52d5\u6703\u8b93\u968a\u4f0d\u9677\u5165\u5371\u6a5f\u554a\uff01"},
+{image:"img/e3/e3-59.png",text:"......"},{image:"img/e3/e3-60.png",text:"\u660e\u65e5\u8449\u5b78\u59d0\uff01\u3086\u308a\u5b78\u59d0\uff01\u4f60\u5011\u6709\u6c92\u6709\u53d7\u50b7\uff1f"},{image:"img/e3/e3-61.png",text:"\u53d7\u50b7...\uff1f"},{image:"img/e3/e3-62.png",text:"\u525b\u624d\uff0c\u6211\u5011\u4e0d\u662f\u88ab\u5de8\u9f8d\u8972\u64ca\u4e86\u55ce\u3002\u90a3\u500b\u6642\u5019\u7684\u50b7..."},{image:"img/e3/e3-63.png",text:"\u7b49\u7b49\uff0c\u6634\u3002\u6211\u8ddf\u3086\u308a\u53ef\u662f\u525b\u525b\u624d\u4f86\u5230\u554a"},
+{image:"img/e3/e3-64.png",text:"\u6c92\u6709\u8ddf\u9f8d\u6230\u9b25\u904e\uff0c\u751a\u81f3\u9023\u9f8d\u4e5f\u6c92\u898b\u904e\u554a"},{image:"img/e3/e3-65.png",text:"\u6b38\uff01\uff1f\u600e\u9ebc\u6703...\u90a3\u5168\u90e8\u90fd\u662f\u5e7b\u89ba\u55ce...\uff1f"},{image:"img/e3/e3-67.png",text:"\u6634\uff1f\u4f60\u5f9e\u525b\u525b\u958b\u59cb\u90fd\u5728\u8aaa\u4e9b\u4ec0\u9ebc\u554a\uff1f"},{image:"img/e3/e3-68.png",text:"\u554a\uff0c\u6c92\u6709...\u4ec0\u9ebc\u4e8b\u90fd\u6c92\u6709..."},{image:"img/e3/e3-69.png",
+text:"\u5927\u5bb6\uff0c\u807d\u7684\u5230\u55ce\uff1f"},{image:"img/e3/e3-71.png",text:"\u662f\u7684\uff0c\u8001\u5e2b\uff01\u807d\u7684\u5230\u554a\uff01"},{image:"img/e3/e3-72.png",text:"\u4e0d\u597d\u610f\u601d...\u8ddf\u4e1f\u4e86\u90a3\u96bb\u751f\u7269\u7684\u751f\u547d\u9ad4\u983b\u7387\u4e86..."},{image:"img/e3/e3-73.png",text:"\u4f46\u662f\uff0c\u56e0\u70ba\u8ffd\u5230\u9019\u908a\u4f86\uff0c\u6536\u96c6\u5230\u90a3\u96bb\u751f\u7269\u8a73\u7d30\u7684\u6578\u64da\u4e86"},{image:"img/e3/e3-74.png",
+text:"\u8001\u5e2b\uff01\u90a3\u96bb\u751f\u7269\u5230\u5e95\u662f\u4ec0\u9ebc\uff01\u771f\u7684\u662f\u90a3\u7a2e\u751f\u7269\u55ce\uff01\uff1f"},{image:"img/e3/e3-75.png",text:"\u90a3\u500b..."},{image:"img/e3/e3-76.png",text:"\u7e3d\u800c\u8a00\u4e4b\uff0c\u4eca\u5929\u7684\u596a\u9084\u8ab2\u7a0b\u5230\u6b64\u7d50\u675f"},{image:"img/e3/e3-77.png",text:"\u4f46\u3001\u4f46\u662f\uff0c\u6211\u9084\u6709\u554f\u984c\u554a..."},{image:"img/e3/e3-78.png",text:"\u6e96\u5099\u50b3\u9001\u56de\u53bb\u5427"},
+{image:"img/e3/e3-80.png",text:"...\u597d"},{image:"img/e3/e3-81.png",text:"\uff5e\u795e\u6a39\u30f6\u5cf0\u5973\u5b66\u5712\uff5e"},{image:"img/e3/e3-82.png",text:"\u54c8\u554a...\u706b\u5c71\u7684\u5730\u52e2\u771f\u4e0d\u597d\u7ad9\uff0c\u6bd4\u8d77\u5e73\u6642\u7d2f\u4e0a\u597d\u5e7e\u500d\u4e86..."},{image:"img/e3/e3-83.png",text:"\u7194\u5ca9\u4e5f\u5f88\u71be\u71b1\u5462...\u4eca\u5929\u65e9\u9ede\u56de\u53bb\u4f11\u606f\u5427"},{image:"img/e3/e3-85.png",text:"...\u55ef\uff1f\u6634\u5462\uff1f"},
+{image:"img/e3/e3-86.png",text:"\u5728\u90a3\u908a\u54e6\u3002\u5582\uff5e\u3001\u6634\uff5e\uff01"},{image:"img/e3/e3-87.png",text:"\u89c0\u6e2c\u8005... \u90a3\u96bb\u751f\u7269\u8aaa\u81ea\u5df1\u662f\u89c0\u6e2c\u8005"},{image:"img/e3/e3-88.png",text:"\u7a76\u7adf\u662f\u5728\u89c0\u6e2c\u4ec0\u9ebc\u5462..."},{image:"img/e3/e3-89.png",text:"\u5582\uff0c\u6634\uff01\u5f9e\u525b\u624d\u958b\u59cb\u4e00\u76f4\u5728\u53eb\u4f60\u4e86"},{image:"img/e3/e3-90.png",text:"\u554a\uff0c\u62b1\u6b49... \u5728\u60f3\u9ede\u4e8b..."},
+{image:"img/e3/e3-91.png",text:"\u662f\u5728\u60f3\u90a3\u96bb\u767d\u8272\u751f\u7269\u7684\u4e8b\u55ce\uff1f"},{image:"img/e3/e3-95.png",text:"...\u662f\u7684"},{image:"img/e3/e3-96.png",text:"\u7684\u78ba\u6211\u4e5f\u5f88\u5728\u610f\u90a3\u96bb\u751f\u7269..."},{image:"img/e3/e3-98.png",text:"\u4f46\u4eca\u5929\u4f60\u4e5f\u7d2f\u4e86\u5427\uff1f\u4e0d\u56de\u5bb6\u597d\u597d\u7684\u4f11\u606f\u55ce"},{image:"img/e3/e3-99.png",text:"\u4ee5\u5f8c\u518d\u60f3\u4e5f\u4e0d\u665a\u5427"},{image:"img/e3/e3-100.png",
+text:"\u90a3\u4e5f\u662f..."},{image:"img/e3/e3-101.png",text:"\u660e\u65e5\u8449\u5b78\u59d0\u5728\u7b49\u7740\u5462\uff0c\u4e00\u8d77\u56de\u5bb6\u5427"},{image:"img/e3/e3-102.png",text:"\u597d\u7684\uff01"},{image:"img/e3/e3-103.png",text:"OS\uff1a\u56f0\u96e3\u7684\u4e8b\u60c5\u7559\u5f85\u4e4b\u5f8c\u518d\u60f3\u4e5f\u597d\u3002\u4f46\u662f\u5462..."},{image:"img/e3/e3-104.png",text:"OS\uff1a\u4e0b\u6b21\u5982\u679c\u80fd\u518d\u9047\u5230\u90a3\u96bb\u751f\u7269\u7684\u8a71\uff0c\u4e00\u5b9a\u8981\u554f\u51fa\u4f86\u89c0\u6e2c\u8005\u5230\u5e95\u662f\u4ec0\u9ebc"},
+{image:"img/e3/e3-105.png",text:"\u661f\u5b88\u5b9a\u671f\u6e2c\u9a57 \uff5e\u8b0e\u4e4b\u751f\u7269\u3001\u5c0d\u8a71\u7de8\uff5e \u5168\u7bc7\u5b8c"}];this.count=this.scenes.length;this.scene=this.parsehash(b);$("#storytotal").text(this.count);this.loadscene(this.scene)};
+storyteller.prototype.updatescene=function(a,b){this.block=1;$("#storyimage").attr("src",a).on("load",function(){$("#loadingmodal").closeModal();$("#storycontent").text(b);that.block=0})};storyteller.prototype.preload=function(a){var b=new Image,c=new Image;b.src=this.scenes[a+1].image;c.src=this.scenes[a+2].image};
+storyteller.prototype.loadscene=function(a){this.scene=a;$("#nowprogress").text(this.scene+1);if(a<this.count)a!==this.count&&(window.location.hash=a+1),this.updatescene(this.scenes[a].image,this.scenes[a].text);else return this.scene=this.count-1,!1;a<parseInt(this.count)-2&&this.preload(a)};storyteller.prototype.reloadscene=function(a){qi=this.parsehash(a);qi!==this.scene&&this.loadscene(qi)};
+storyteller.prototype.prevscene=function(){if(0==this.scene||1==this.block)return 1==this.block&&$("#loadingmodal").openModal(),!1;--this.scene;this.loadscene(this.scene)};storyteller.prototype.nextscene=function(){if(1==this.block)return $("#loadingmodal").openModal(),!1;this.scene+=1;this.loadscene(this.scene)};
+$(function(){var a=new storyteller;a.init("e1.json",parseInt(window.location.hash.substring(1)));$(window).on("hashchange",function(){a.reloadscene(parseInt(window.location.hash.substring(1)))});$("#storyimage").on("vclick swipeleft",function(){a.nextscene()});$("#storyimage").on("swiperight",function(){a.prevscene()});$("#navprevbtn").on("vclick",function(){a.prevscene()});$("#navnextbtn").on("vclick",function(){a.nextscene()})});
+  </script>
+</head>
+<body>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">GAWiki 第99區</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h3>謎のイロウス 対話編 故事章節 引き抜け！勇者の剣！ 劇情翻譯</h3>
+        <h5>遊戲：戰鬥女子高校 / 文章作者：日向</h5>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ra" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="4650440851" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class="row" id="story">
+        <div class="col s12">
+          <div style="font-size: 0.8em">（翻頁可點擊圖像、在圖上左右撥動或者使用圖像下方按鈕）</div>
+          <div id="storycontainer">
+            <img src="img/e3/e3-1.png" alt="劇情圖片" id="storyimage">
+            <div id="storycontent">～地球·赫斯提亞火山～</div>
+          </div>
+          <div id="storyprogress" style="text-align: center; color: #333">
+            <span id="nowprogress">1</span>/<span id="storytotal"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navprevbtn">前一張</a></div>
+        <div class="col s6"><a class="waves-effect waves-light btn-large" style="width: 100%" id="navnextbtn">後一張</a></div>
+	  </div>
+      <div class="row">
+        <div class="col s6 offset-s3 m6"><a href="e2.html" class="waves-effect waves-light btn-large" style="width: 100%">上一章</a></div>
+      </div>
+      <div class="row">
+		<a href="index.html">&lt;&lt; 返回目錄</a><br><br>
+        Facebook 粉絲專頁：<a href="https://www.facebook.com/highschoolbattlegirl" target="_blank">戰鬥女子高校 Battle Girl High School</a>
+      </div>
+      <div class="row">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle ra" style="display:block" data-ad-client="ca-pub-8407768979939083" data-ad-slot="6127174054" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div id="loadingmodal" class="modal">
+        <div class="modal-content">
+          <p>載入中，請稍候。</p>
+          <p>如等候超過10秒，請刷新頁面。</p>
+        </div>
+      </div>
+      <div class="row">
+        <small>屬於玩家們的空間 - <a href="http://gawiki.com" target="_blank">GAWiki</a> 分支</small>
+      </div>
+    </div>
+    <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src="//www.google-analytics.com/analytics.js";r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));ga("create","UA-64411384-3","auto");ga("send","pageview");</script>
+</body>
+</html>
